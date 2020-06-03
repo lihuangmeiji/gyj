@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color2"
+    tools:context=".module.ui.users.UserNameCertificationActivity">
+
+    <View
+        android:id="@+id/status_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_statue_height"
+        android:background="@color/white" />
+    <include layout="@layout/layout_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="20dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:background="@color/white">
+        <EditText
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_16sp"
+            android:text="@string/tv46"
+            android:textColorHint="@color/color4"/>
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_16sp"
+            android:textColorHint="@color/color4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="20dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:background="@color/white">
+        <EditText
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_16sp"
+            android:text="@string/tv47"
+            android:textColorHint="@color/color4"/>
+        <TextView
+            android:id="@+id/tv_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_16sp"
+            android:textColorHint="@color/color4" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_marginTop="20dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/text_16sp"
+        android:text="@string/tv48"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip">
+        <ImageView
+            android:id="@+id/iv_nc_identity_number_zm"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@mipmap/homebannermr"/>
+        <ImageView
+            android:id="@+id/iv_nc_identity_number_fm"
+            android:layout_marginLeft="20dip"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@mipmap/homebannermr"/>
+    </LinearLayout>
+</LinearLayout>

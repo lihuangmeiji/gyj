@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color39"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".module.fragment.TabCategorizeFirstFragment">
+
+    <ViewStub
+        android:id="@+id/vs_showerror"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/layout_empty" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.jwenfeng.library.pulltorefresh.PullToRefreshLayout
+            android:id="@+id/swipeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"></com.jwenfeng.library.pulltorefresh.PullToRefreshLayout>
+
+        <com.system.technologyinformation.widget.Relativelayout_status_bar
+            android:id="@+id/rel_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dip">
+
+            <ImageView
+                android:id="@+id/iv_title_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color37" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/v_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"></View>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_home_scanning_sx"
+                        android:layout_width="25dip"
+                        android:layout_height="25dip"
+                        android:scaleType="fitXY"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dip"
+                        android:src="@mipmap/home_scanning_sx"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_home_sign_sx"
+                        android:layout_width="25dip"
+                        android:layout_height="25dip"
+                        android:scaleType="fitXY"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dip"
+                        android:layout_toRightOf="@+id/iv_home_scanning_sx"
+                        android:src="@mipmap/home_sign_sx"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_home_ico"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:scaleType="center"
+                        android:src="@mipmap/home_ico" />
+                </RelativeLayout>
+            </LinearLayout>
+        </com.system.technologyinformation.widget.Relativelayout_status_bar>
+    </RelativeLayout>
+</LinearLayout>

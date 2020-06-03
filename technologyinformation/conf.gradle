@@ -1,0 +1,5 @@
+ext {
+    dependencies = [
+            "multidex"                 : "com.android.support:multidex:1.0.1"
+    ]
+}

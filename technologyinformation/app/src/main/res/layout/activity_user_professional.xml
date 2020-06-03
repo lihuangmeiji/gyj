@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color2"
+    tools:context=".module.ui.users.UserProfessionalActivity">
+    <View
+        android:id="@+id/status_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_statue_height"
+        android:background="@color/white" />
+    <include layout="@layout/layout_toolbar" />
+    <ViewStub
+        android:id="@+id/vs_showerror"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/layout_empty"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_professional"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"/>
+</LinearLayout>

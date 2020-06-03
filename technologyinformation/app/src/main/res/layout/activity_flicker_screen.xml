@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rel_bg_fs"
+    tools:context=".module.ui.FlickerScreenActivity">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:visibility="gone">
+    </android.support.v4.view.ViewPager>
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/lin_fs">
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginRight="40dip"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:background="@null"
+        android:text="跳过>"
+        />
+    <!-- 图片位置指示器 -->
+    <LinearLayout
+        android:id="@+id/director"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dip"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_shape_banner_selected" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dip"
+            android:background="@drawable/bg_shape_banner_unselected" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dip"
+            android:background="@drawable/bg_shape_banner_unselected" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_fs_path"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/tv_fs_contnet"
+        android:layout_width="80dip"
+        android:layout_height="35dip"
+        android:gravity="center"
+        android:layout_marginTop="20dip"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dip"
+        android:visibility="gone"
+        android:background="@drawable/bg_shape_tm"
+        />
+</RelativeLayout>

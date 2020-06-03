@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color39"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".module.ui.users.UserPayActivity">
+
+    <View
+        android:id="@+id/status_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_statue_height"
+        android:background="@color/color25" />
+
+    <include layout="@layout/layout_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dip"
+        android:gravity="center">
+
+        <com.system.technologyinformation.widget.CircleImageView
+            android:id="@+id/iv_store_ico"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:src="@mipmap/userphotomr" />
+
+        <TextView
+            android:id="@+id/tv_store_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_store_ico"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dip"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/white_background_order"
+        android:orientation="vertical"
+        android:padding="20dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/bg_shape_pay_money"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip">
+            <TextView
+                android:id="@+id/tv_money_bs_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv69"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textSize="@dimen/text_24sp" />
+            <EditText
+                android:id="@+id/et_pay_money"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dip"
+                android:background="@null"
+                android:gravity="center|left"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:maxLength="7"
+                android:hint="@string/tv88"
+                android:textColor="@color/black"
+                android:textColorHint="@color/tabwd"
+                android:textSize="@dimen/text_16sp" />
+
+            <TextView
+                android:id="@+id/tv_money_bs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv69"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_24sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_pay_point"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:visibility="gone"
+            android:layout_marginTop="10dip">
+
+            <CheckBox
+                android:id="@+id/cb_pay_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/pay_select_selector"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tv_pay_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+id/cb_pay_select"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#7C7C7C"
+                android:textSize="@dimen/text_14sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_pay_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/tv103"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_27sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_pay_wx"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/bg_shape_pay_wx"
+            android:gravity="center"
+            android:text="@string/tv92"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16sp" />
+
+        <TextView
+            android:id="@+id/tv_pay_zfb"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/bg_shape_pay_zfb"
+            android:gravity="center"
+            android:text="@string/tv93"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="30dip"
+    android:paddingRight="30dip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.system.technologyinformation.widget.Relativelayout_280_94
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/sign_success1" >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dip"
+                android:layout_alignParentBottom="true"
+                android:background="#FEFBF4"></View>
+        </com.system.technologyinformation.widget.Relativelayout_280_94>
+        <com.system.technologyinformation.widget.Relativelayout_280_64
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/sign_success2">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dip"
+                android:background="#FEFBF4"></View>
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true">
+              <TextView
+                  android:id="@+id/tv_title"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@null"
+                  android:gravity="center"
+                  android:text="恭喜您获得10积分"
+                  android:textColor="@color/color37"
+                  android:textSize="@dimen/text_18sp"
+                  android:textStyle="bold" />
+
+              <TextView
+                  android:id="@+id/tv_content"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/tv_title"
+                  android:layout_marginTop="13dip"
+                  android:background="@null"
+                  android:gravity="center"
+                  android:text="积分可用来抵扣现金哦！"
+                  android:textColor="@color/tabwd"
+                  android:textSize="@dimen/text_16sp" />
+          </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dip"
+                android:layout_alignParentBottom="true"
+                android:background="#FEFBF4"></View>
+        </com.system.technologyinformation.widget.Relativelayout_280_64>
+        <com.system.technologyinformation.widget.Relativelayout_280_107
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/sign_success3"
+            android:paddingBottom="15dip">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dip"
+                android:background="#FEFBF4"></View>
+            <TextView
+                android:id="@+id/btn_dialog_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_alignParentBottom="true"
+
+                android:layout_marginLeft="30dip"
+                android:layout_marginRight="30dip"
+                android:background="@drawable/bg_shape_ellipse"
+                android:gravity="center"
+                android:text="我知道了"
+                android:textColor="@color/white" />
+        </com.system.technologyinformation.widget.Relativelayout_280_107>
+    </LinearLayout>
+
+
+</LinearLayout>

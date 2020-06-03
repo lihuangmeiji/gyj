@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="15dip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_tr_ico"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:scaleType="centerInside"
+            android:src="@mipmap/shoppingmr" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_tr_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip">
+                <TextView
+                    android:id="@+id/tv_tr_discounted_prices"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv103"
+                    android:textColor="@color/color5"
+                    android:textSize="@dimen/text_14sp" />
+
+                <TextView
+                    android:id="@+id/tv_tr_original_integral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv103"
+                    android:textColor="@color/color5"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/text_12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_tr_original_price"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tv103"
+                    android:textColor="@color/color29"
+                    android:textSize="@dimen/text_14sp" />
+
+                <ImageView
+                    android:id="@+id/iv_shopping_reduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/sp_subtract"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_tr_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:text="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_16sp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_shopping_increase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:src="@mipmap/sp_add" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dip"
+        android:layout_marginTop="13dip"
+        android:background="@color/color2"></View>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/status_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_statue_height"
+        android:background="@color/white" />
+
+    <!--    <fragment
+            android:id="@+id/fragment"
+            class="com.system.technologyinformation.module.demo4.Demo4Fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />-->
+    <WebView
+        android:id="@+id/wv_enrollment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></WebView>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="30dip"
+    android:paddingRight="30dip">
+
+    <com.system.technologyinformation.widget.Relativelayout_1_1
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/sign_quan_success"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/btn_dialog_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="70dip"
+            android:layout_marginLeft="80dip"
+            android:layout_marginRight="80dip"
+            android:background="@drawable/bg_shape_sign_quan"
+            android:gravity="center"
+            android:text="我知道了"
+            android:textColor="#E18738" />
+    </com.system.technologyinformation.widget.Relativelayout_1_1>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_product_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="10dip">
+
+    <ImageView
+        android:id="@+id/iv_vote_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@mipmap/img_zw" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:gravity="center">
+        <CheckBox
+            android:id="@+id/cb_vote_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:button="@drawable/vote_select2_selector"
+            android:textSize="@dimen/sp_12" />
+        <TextView
+            android:id="@+id/tv_vote_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/cb_vote_select"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_16sp" />
+        <TextView
+            android:id="@+id/tv_vote_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/text_16sp"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+</LinearLayout>

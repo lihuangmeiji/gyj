@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="50dip"
+    android:paddingRight="50dip">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/shoppingmr"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/tv76"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:gravity="center"
+                android:text="@string/tv77"
+                android:textColor="@color/tabwd"
+                android:textSize="@dimen/text_14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_weight="1"
+                    android:drawablePadding="5dip"
+                    android:drawableTop="@drawable/bg_shape_cicle_sign1"
+                    android:gravity="center"
+                    android:text="@string/tv78"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_12sp" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_weight="1"
+                    android:drawablePadding="5dip"
+                    android:drawableTop="@drawable/bg_shape_cicle_sign2"
+                    android:gravity="center"
+                    android:text="@string/tv79"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_12sp" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_weight="1"
+                    android:drawablePadding="5dip"
+                    android:drawableTop="@drawable/bg_shape_cicle_sign3"
+                    android:gravity="center"
+                    android:text="@string/tv80"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_12sp" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_weight="1"
+                    android:drawablePadding="5dip"
+                    android:drawableTop="@drawable/bg_shape_cicle_sign4"
+                    android:gravity="center"
+                    android:text="@string/tv81"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btn_dialog_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="30dip"
+                android:layout_marginRight="30dip"
+                android:layout_marginTop="30dip"
+                android:layout_marginBottom="10dip"
+                android:background="@drawable/bg_sign1"
+                android:gravity="center"
+                android:text="@string/tv82"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

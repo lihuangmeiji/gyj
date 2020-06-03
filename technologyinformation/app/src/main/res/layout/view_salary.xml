@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="50dip"
+    android:paddingRight="50dip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/tv68"
+            android:layout_marginTop="40dip"
+            android:textColor="@color/tabwd"
+            android:textSize="@dimen/text_16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:background="@drawable/bg_shape_salary">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv69"
+                android:textSize="@dimen/text_18sp"
+                android:textColor="@color/black"/>
+            <EditText
+                android:id="@+id/tv_salary_code"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:background="@null"
+                android:gravity="center"
+                android:layout_marginLeft="5dip"
+                android:imeOptions="actionNext"
+                android:lines="1"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:textColorHint="@color/tabwd"
+                android:textSize="@dimen/text_16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dip"
+            android:layout_marginTop="30dip"
+            android:background="@color/color4"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60.0dip">
+
+            <TextView
+                android:id="@+id/btn_dialog_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/tv26"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_14sp" />
+
+            <View
+                android:layout_width="0.1dip"
+                android:layout_height="match_parent"
+                android:background="@color/color4"></View>
+
+            <TextView
+                android:id="@+id/btn_dialog_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/tv27"
+                android:textColor="@color/color1"
+                android:textSize="@dimen/text_14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

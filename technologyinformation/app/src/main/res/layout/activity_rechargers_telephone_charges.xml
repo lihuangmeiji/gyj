@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".module.ui.home.RechargersTelephoneChargesActivity">
+
+    <View
+        android:id="@+id/status_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_statue_height"
+        android:background="@color/color37" />
+
+    <include layout="@layout/layout_toolbar" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_16sp"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="20dip"
+        android:text="@string/tv155"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip">
+        <EditText
+            android:id="@+id/et_rtc_phone"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_20sp"
+            android:textColorHint="@color/color37"
+            android:textColor="@color/black"
+            android:background="@null"
+            android:maxLength="11"
+            android:lines="1"
+            android:inputType="number"
+            android:hint="@string/tv156"/>
+        <ImageView
+            android:id="@+id/iv_get_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:src="@mipmap/contacts_bs"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dip"
+        android:layout_marginTop="30dip"
+        android:background="@color/color40"></View>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:layout_marginTop="20dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"/>
+    <ViewStub
+        android:id="@+id/vs_showerror"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/layout_empty" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:lines="2"
+        android:gravity="center|left"
+        android:paddingLeft="30dp"
+        android:text="注：过期号码、未实名认证号码、黑名单号码，携号转网号码，智能网号码、\n家庭网号码等原因,因运营商原因，充值可能会产生失败情况，敬请见谅"
+        android:textColor="@color/tabwd"
+        android:textSize="10sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dip"
+        android:background="@color/color40"></View>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_10sp"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:textColor="@color/tabwd"
+        android:text="本服务由聚合数据提供，天聚地合（苏州）数据股份有限公司"/>
+    <TextView
+        android:id="@+id/tv_rtc_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_10sp"
+        android:layout_marginTop="5dip"
+        android:visibility="gone"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/tv_rtc"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginBottom="10dip"
+        android:background="@drawable/bg_sign"
+        android:gravity="center"
+        android:text="充值"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_16sp" />
+</LinearLayout>

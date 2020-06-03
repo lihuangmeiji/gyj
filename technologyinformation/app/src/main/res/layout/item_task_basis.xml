@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_background"
+    android:orientation="vertical"
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip">
+
+        <TextView
+            android:id="@+id/tv_task_basis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="基础任务"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_16sp" />
+
+        <TextView
+            android:id="@+id/tv_task_basis_ts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@+id/tv_task_basis"
+            android:text="基础任务完成后才可解锁进阶任务"
+            android:textColor="@color/tabwd"
+            android:textSize="@dimen/text_12sp" />
+        <ImageView
+            android:id="@+id/iv_task_unlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:src="@mipmap/task_unlock"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/post_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip" />
+</LinearLayout>

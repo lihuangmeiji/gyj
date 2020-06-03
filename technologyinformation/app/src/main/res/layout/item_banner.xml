@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.system.technologyinformation.widget.Linearlayout_69_18 xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dip"
+    android:layout_marginRight="15dip"
+    android:orientation="vertical">
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        app:indicator_drawable_selected="@drawable/bg_shape_banner_selected"
+        app:indicator_drawable_unselected="@drawable/bg_shape_banner_unselected"
+        app:banner_default_image="@mipmap/homebannermr"
+        android:layout_height="match_parent"
+        android:background="@drawable/white_background"/>
+</com.system.technologyinformation.widget.Linearlayout_69_18>

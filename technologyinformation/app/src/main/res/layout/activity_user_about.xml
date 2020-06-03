@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color39"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".module.ui.users.UserAboutActivity">
+
+    <View
+        android:id="@+id/status_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_statue_height"
+        android:background="@color/white" />
+
+    <include layout="@layout/layout_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:scrollbars="none"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.system.technologyinformation.widget.ImageView_9_4
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/bg_about" />
+
+
+                <com.system.technologyinformation.widget.Relativelayout_9_3
+                    android:id="@+id/rel_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </com.system.technologyinformation.widget.Relativelayout_9_3>
+                <LinearLayout
+                    android:layout_below="@+id/rel_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:gravity="center"
+                    android:background="@drawable/white_background"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_app_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dip"
+                        android:src="@mipmap/logo_about" />
+
+                    <TextView
+                        android:id="@+id/tv_version_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dip"
+                        android:text="版本号 v1.0.0"
+                        android:textColor="@color/tabwd"
+                        android:textSize="@dimen/text_14sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginTop="30dip">
+                        <ImageView
+                            android:id="@+id/iv_bg_about1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/bg_about1"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="关于工友家"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:layout_toRightOf="@+id/iv_bg_about1"
+                            android:textSize="@dimen/text_18sp"/>
+                    </RelativeLayout>
+                    <com.system.technologyinformation.widget.JustifyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dip"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="5dip"
+                        android:text="@string/tv134"
+                        android:textColor="@color/tabwd"
+                        android:textSize="@dimen/text_14sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_clear_cache"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="@color/white"
+                android:gravity="center"
+                android:layout_marginTop="15dip"
+                android:text="@string/tv135"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16sp" />
+
+            <TextView
+                android:id="@+id/tv_logout"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginTop="10dip"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="@string/tv15"
+                android:layout_marginBottom="30dip"
+                android:textColor="@color/color37"
+                android:textSize="@dimen/text_16sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

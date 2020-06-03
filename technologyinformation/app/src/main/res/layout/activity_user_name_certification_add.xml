@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color39"
+    android:orientation="vertical"
+    tools:context=".module.ui.users.UserNameCertificationAddActivity">
+
+    <View
+        android:id="@+id/status_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_statue_height"
+        android:background="@color/white" />
+
+    <include layout="@layout/layout_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginTop="20dip"
+        android:scrollbars="none"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_rz_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="20dip"
+                    android:text="拍摄并识别身份证人像面和国徽面，保持证件内容清晰可见。"
+                    android:textColor="@color/tabwd"
+                    android:textSize="@dimen/text_14sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="20dip">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_nc_identity_number_zm"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <com.system.technologyinformation.widget.RoundImageView2
+                            android:id="@+id/iv_nc_identity_number_zm"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/identity_number_zm" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iv_nc_identity_number_zm"
+                            android:layout_marginTop="15dip"
+                            android:gravity="center"
+                            android:text="请上传身份证人像面"
+                            android:textColor="@color/color63"
+                            android:textSize="@dimen/text_14sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rel_nc_identity_number_fm"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dip"
+                        android:layout_weight="1">
+
+                        <com.system.technologyinformation.widget.RoundImageView2
+                            android:id="@+id/iv_nc_identity_number_fm"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/identity_number_fm" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iv_nc_identity_number_fm"
+                            android:layout_marginTop="15dip"
+                            android:gravity="center"
+                            android:text="请上传身份证国徽面"
+                            android:textColor="@color/color63"
+                            android:textSize="@dimen/text_14sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:background="@color/color39"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="15dip"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="20dip"
+                    android:text="请仔细核对信息"
+                    android:textColor="@color/tabwd"
+                    android:textSize="@dimen/text_16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="20dip">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="真实姓名"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_16sp" />
+                    <EditText
+                        android:id="@+id/et_nc_name"
+                        android:layout_width="0dip"
+                        android:layout_weight="1"
+                        android:layout_height="45dip"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="25dip"
+                        android:textColor="@color/tabwd"
+                        android:textColorHint="@color/color4"
+                        android:textSize="@dimen/text_16sp" />
+                    <ImageView
+                        android:id="@+id/iv_nc_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/user_name_update" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dip"
+                    android:layout_marginLeft="20dip"
+                    android:background="@color/color40"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="20dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="身份证号"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_16sp" />
+
+                    <EditText
+                        android:id="@+id/et_nc_identity_number"
+                        android:layout_width="0dip"
+                        android:layout_height="45dip"
+                        android:layout_marginLeft="25dip"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:textColor="@color/tabwd"
+                        android:gravity="center_vertical"
+                        android:textColorHint="@color/color4"
+                        android:textSize="@dimen/text_16sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_nc_identity_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/user_name_update" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dip"
+                    android:layout_marginLeft="20dip"
+                    android:background="@color/color40"></View>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="20dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="有效期限"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_16sp" />
+
+                    <EditText
+                        android:id="@+id/et_nc_identity_time"
+                        android:layout_width="0dip"
+                        android:layout_height="45dip"
+                        android:layout_marginLeft="25dip"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:background="@color/white"
+                        android:textColor="@color/tabwd"
+                        android:textColorHint="@color/color4"
+                        android:hint="有效期限:2020.02.02"
+                        android:textSize="@dimen/text_16sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_nc_identity_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/user_name_update" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_nc_botoom"
+                android:layout_width="match_parent"
+                android:layout_height="90dip"
+                android:layout_marginTop="25dip">
+
+                <TextView
+                    android:id="@+id/tv_nc"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/selector_sign"
+                    android:gravity="center"
+                    android:text="@string/tv50"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

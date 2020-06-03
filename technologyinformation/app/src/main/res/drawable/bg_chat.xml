@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>　　　　//第一个图层
+              
+        <shape android:shape="rectangle">  //定义几何形状   shape=["rectangle" | "oval" | "line" |
+            "ring" 其中rectagle矩形，oval椭圆，line水平直线，ring环形        
+            <gradient
+                android:angle="360"
+                android:startColor="#FFAA31"
+                android:endColor="#FF7E00" />   
+        </shape>
+    </item>
+</layer-list>

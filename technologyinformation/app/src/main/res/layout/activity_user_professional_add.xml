@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color2"
+    tools:context=".module.ui.users.UserProfessionalAddActivity">
+    <View
+        android:id="@+id/status_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_statue_height"
+        android:background="@color/white" />
+    <include layout="@layout/layout_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/lin_prifessional_type"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="20dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/et_prifessional_type"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_16sp"
+            android:gravity="center_vertical"
+            android:hint="@string/tv70"
+            android:textColorHint="@color/color4"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/user_right_zs" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:layout_marginTop="20dip">
+        <ImageView
+            android:id="@+id/iv_prifessional"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:id="@+id/lin_prifessional_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color4"
+                android:text="@string/tv44"
+                android:textSize="@dimen/text_16sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color4"
+                android:text="@string/tv45"
+                android:textSize="@dimen/text_14sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"></View>
+    <TextView
+        android:id="@+id/tv_prifessional"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:gravity="center"
+        android:text="@string/tv71"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_16sp"
+        android:background="@drawable/bg_shape_login"/>
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.system.technologyinformation.widget.LinearLayout_status_bar
+        android:id="@+id/rel_bg"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:background="@color/color37"
+        android:orientation="vertical">
+    </com.system.technologyinformation.widget.LinearLayout_status_bar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rel_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dip">
+
+            <ImageView
+                android:id="@+id/iv_home_scanning_sx"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dip"
+                android:scaleType="fitXY"
+                android:src="@mipmap/home_scanning_sx"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_home_sign_sx"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dip"
+                android:layout_toRightOf="@+id/iv_home_scanning_sx"
+                android:scaleType="fitXY"
+                android:src="@mipmap/home_sign_sx"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_home_ico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/home_ico"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_top"
+            android:layout_width="match_parent"
+            android:layout_height="140dip"
+            android:layout_below="@+id/rel_title"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/lin_home_scanning"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_home_scanning"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:scaleType="center"
+                    android:src="@mipmap/home_scanning" />
+
+                <TextView
+                    android:id="@+id/tv_home_scanning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center"
+                    android:text="@string/tv132"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_home_sign"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_home_sign"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:scaleType="center"
+                    android:src="@mipmap/home_sign" />
+
+                <TextView
+                    android:id="@+id/tv_home_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center"
+                    android:text="@string/tv133"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/white_background"
+            android:orientation="vertical">
+
+            <com.system.technologyinformation.widget.PageMenuLayout
+                android:id="@+id/pagemenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:pagemenu_row_count="2"
+                app:pagemenu_span_count="4" />
+
+            <com.system.technologyinformation.widget.IndicatorView
+                android:id="@+id/main_home_entrance_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:gravity="0"
+                app:indicatorColor="#668b8989"
+                app:indicatorColorSelected="#FF5722"
+                app:indicatorWidth="6" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

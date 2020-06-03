@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color59"
+    android:orientation="vertical"
+    tools:context=".module.ui.users.IntegralRulesActivity">
+
+    <View
+        android:id="@+id/status_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_statue_height"
+        android:background="@color/white" />
+
+    <include layout="@layout/layout_toolbar" />
+
+    <ViewStub
+        android:id="@+id/vs_showerror"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/layout_empty" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dip">
+
+            <TextView
+                android:id="@+id/tv_q1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="问:什么是积分？"
+                android:textColor="@color/tabwd"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/tv_a1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:lineSpacingExtra="5dip"
+                android:text="答:积分是存在于工友家APP内的一种虚拟货币，可以用来抵扣现金、兑换虚拟或实体商品，或折算成其他权益，但不能流通。 "
+                android:textColor="@color/tabwd"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/tv_q2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:text="问:什么是积分？"
+                android:textColor="@color/tabwd"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/tv_a2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:lineSpacingExtra="5dip"
+                android:text="答:积分是存在于工友家APP内的一种虚拟货币，可以用来抵扣现金、兑换虚拟或实体商品，或折算成其他权益，但不能流通。 "
+                android:textColor="@color/tabwd"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/tv_q3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:text="问:什么是积分？"
+                android:textColor="@color/tabwd"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/tv_a3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:lineSpacingExtra="5dip"
+                android:text="答:积分是存在于工友家APP内的一种虚拟货币，可以用来抵扣现金、兑换虚拟或实体商品，或折算成其他权益，但不能流通。 "
+                android:textColor="@color/tabwd"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/tv_q4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:text="问:什么是积分？"
+                android:textColor="@color/tabwd"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/tv_a4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:lineSpacingExtra="5dip"
+                android:text="答:积分是存在于工友家APP内的一种虚拟货币，可以用来抵扣现金、兑换虚拟或实体商品，或折算成其他权益，但不能流通。 "
+                android:textColor="@color/tabwd"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/tv_q5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:text="问:什么是积分？"
+                android:textColor="@color/tabwd"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/tv_a5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:lineSpacingExtra="5dip"
+                android:text="答:积分是存在于工友家APP内的一种虚拟货币，可以用来抵扣现金、兑换虚拟或实体商品，或折算成其他权益，但不能流通。 "
+                android:textColor="@color/tabwd"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/tv_q6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:text="问:什么是积分？"
+                android:textColor="@color/tabwd"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/tv_a6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:lineSpacingExtra="5dip"
+                android:text="答:积分是存在于工友家APP内的一种虚拟货币，可以用来抵扣现金、兑换虚拟或实体商品，或折算成其他权益，但不能流通。 "
+                android:textColor="@color/tabwd"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/tv_q7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:text="问:什么是积分？"
+                android:textColor="@color/tabwd"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/tv_a7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:lineSpacingExtra="5dip"
+                android:text="答:积分是存在于工友家APP内的一种虚拟货币，可以用来抵扣现金、兑换虚拟或实体商品，或折算成其他权益，但不能流通。 "
+                android:textColor="@color/tabwd"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/tv_q8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:text="问:什么是积分？"
+                android:textColor="@color/tabwd"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/tv_a8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:lineSpacingExtra="5dip"
+                android:text="答:积分是存在于工友家APP内的一种虚拟货币，可以用来抵扣现金、兑换虚拟或实体商品，或折算成其他权益，但不能流通。 "
+                android:textColor="@color/tabwd"
+                android:textSize="@dimen/text_14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

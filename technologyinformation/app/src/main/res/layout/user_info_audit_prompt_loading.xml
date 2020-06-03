@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="30dip"
+    android:paddingRight="30dip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dip"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/tv159"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@null"
+            android:layout_marginLeft="35dip"
+            android:layout_marginRight="35dip"
+            android:lineSpacingExtra="5dip"
+            android:text="您提交的实名认证审核失败！\n请重新提交\n失败原因:身份信息有误"
+            android:textColor="@color/color9"
+            android:textSize="@dimen/text_16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dip"
+            android:layout_marginTop="20dip"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/btn_dialog_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/tv26"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_14sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/btn_dialog_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="25dip"
+                android:background="#1CACFF"
+                android:gravity="center"
+                android:text="@string/tv27"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

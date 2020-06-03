@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+    <item android:top="170dip">
+        <shape android:shape="rectangle">
+            <!--实现应用背景颜色渐变-->
+            <gradient
+                android:angle="270"
+                android:endColor="#ffffff"
+                android:startColor="@color/color5" />
+        </shape>
+    </item>
+</layer-list>

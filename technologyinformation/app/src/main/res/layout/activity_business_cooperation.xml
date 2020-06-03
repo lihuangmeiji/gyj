@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".module.ui.users.BusinessCooperationActivity">
+    <View
+        android:id="@+id/status_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_statue_height"
+        android:background="@color/white" />
+    <include layout="@layout/layout_toolbar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color39"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.system.technologyinformation.widget.ImageView_15_8
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/bs_top_bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:orientation="vertical">
+
+                    <com.system.technologyinformation.widget.Relativelayout_15_6
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></com.system.technologyinformation.widget.Relativelayout_15_6>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_background"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="25dip">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/bs_title_one" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dip"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/tv_bs_title_one"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="快速上手"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_16sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv_bs_title_one"
+                                    android:layout_marginTop="13dip"
+                                    android:lineSpacingExtra="3dip"
+                                    android:text="商店使用工友家收钱码及推广传单，店主口头推荐使用工友家。"
+                                    android:textColor="@color/color9"
+                                    android:textSize="@dimen/text_12sp" />
+                            </RelativeLayout>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dip"
+                                android:src="@mipmap/bs_content_one" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dip"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/iv_bs_content_two"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/bs_content_two" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="30dip"
+                                android:layout_toRightOf="@+id/iv_bs_content_two">
+
+                                <TextView
+                                    android:id="@+id/tv_bs_title_two"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="合作效益"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_16sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv_bs_title_two"
+                                    android:layout_marginTop="13dip"
+                                    android:lineSpacingExtra="3dip"
+                                    android:text="推广费用、交易额奖励、工友家积分励。"
+                                    android:textColor="@color/color9"
+                                    android:textSize="@dimen/text_12sp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dip"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/tv_bs_title_three"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="生意助力"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_16sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv_bs_title_three"
+                                    android:layout_marginTop="13dip"
+                                    android:lineSpacingExtra="3dip"
+                                    android:text="通过工友家吸引更多工友前来消费,并且提供线上线下的活动支持"
+                                    android:textColor="@color/color9"
+                                    android:textSize="@dimen/text_12sp" />
+                            </RelativeLayout>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dip"
+                                android:src="@mipmap/bs_content_three" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dip"
+                        android:background="@drawable/white_background"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="20dip">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/bs_title_two" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dip"
+                            android:text="工友家驿站合作:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_14sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dip"
+                            android:text="联系人:刘琦"
+                            android:textColor="@color/tabwd"
+                            android:textSize="@dimen/text_14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_lx_phone1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dip"
+                            android:text="联系电话:186-0076-4294"
+                            android:textColor="@color/tabwd"
+                            android:textSize="@dimen/text_14sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="35dip"
+                            android:text="工友家商店合作:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_14sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dip"
+                            android:text="联系人:谢艳涛"
+                            android:textColor="@color/tabwd"
+                            android:textSize="@dimen/text_14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_lx_phone2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dip"
+                            android:text="联系电话:188-4266-4541"
+                            android:textColor="@color/tabwd"
+                            android:textSize="@dimen/text_14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dip"></View>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".module.ui.account.LoginActivity">
+
+    <View
+        android:id="@+id/status_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_statue_height"
+        android:background="@color/white" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+        android:layout_below="@+id/status_bar_view"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="20dip"
+        android:scaleType="center"
+        android:src="@mipmap/login_close" />
+    <LinearLayout
+        android:id="@+id/lin_content1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/tv10"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_27sp" />
+
+        <com.system.technologyinformation.widget.ClearEditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dip"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="@string/tv18"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="11"
+            android:textColor="@color/black"
+            android:textColorHint="@color/textProfileGray"
+            android:textSize="@dimen/text_16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dip"
+            android:layout_marginTop="15dip"
+            android:background="@color/gray_slight"></View>
+
+        <com.system.technologyinformation.widget.ClearEditText
+            android:id="@+id/et_invite_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip"
+            android:layout_marginTop="35dip"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="@string/tv8"
+            android:imeOptions="actionDone"
+            android:lines="1"
+            android:textColor="@color/black"
+            android:textColorHint="@color/textProfileGray"
+            android:textSize="@dimen/text_16sp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dip"
+            android:background="@color/gray_slight"></View>
+
+        <TextView
+            android:id="@+id/tv_get_code"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginTop="30dip"
+            android:background="@drawable/selector_login"
+            android:gravity="center"
+            android:text="@string/tv22"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv158"
+            android:textColor="@color/tabwd"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:textSize="@dimen/text_12sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_content2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/tv19"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_27sp" />
+
+        <TextView
+            android:id="@+id/tv_show_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dip"
+            android:gravity="center"
+            android:textColor="@color/color35"
+            android:textSize="@dimen/text_14sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip">
+
+            <EditText
+                android:id="@+id/et_code_show1"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:background="@drawable/bg_gray_quadrate"
+                android:gravity="center"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="1"
+                android:textSize="@dimen/text_16sp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/et_code_show2"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_marginLeft="20dip"
+                android:layout_toRightOf="@id/et_code_show1"
+                android:background="@drawable/bg_gray_quadrate"
+                android:gravity="center"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="1"
+                android:textSize="@dimen/text_16sp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/et_code_show3"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_marginLeft="20dip"
+                android:layout_toRightOf="@id/et_code_show2"
+                android:background="@drawable/bg_gray_quadrate"
+                android:gravity="center"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="1"
+                android:textSize="@dimen/text_16sp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/et_code_show4"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_marginLeft="20dip"
+                android:layout_toRightOf="@id/et_code_show3"
+                android:background="@drawable/bg_gray_quadrate"
+                android:gravity="center"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="1"
+                android:textSize="@dimen/text_16sp"
+                android:visibility="gone" />
+
+            <com.system.technologyinformation.widget.VerificationCodeView
+                android:id="@+id/verificationcodeview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:vcv_et_bg="@drawable/et_login_code"
+                app:vcv_et_cursor="@drawable/et_cursor"
+                app:vcv_et_inputType="number"
+                app:vcv_et_number="4"
+                app:vcv_et_text_color="@android:color/black"
+                app:vcv_et_text_size="6sp">
+            </com.system.technologyinformation.widget.VerificationCodeView>
+
+            <TextView
+                android:id="@+id/tv_code_error_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/verificationcodeview"
+                android:layout_marginTop="10dip"
+                android:layout_marginLeft="15dip"
+                android:textColor="@color/color36"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/tv_show_code_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_code_error_info"
+                android:layout_marginTop="20dip"
+                android:layout_marginLeft="15dip"
+                android:textColor="@color/color_register_sms"
+                android:textSize="@dimen/text_14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/v_jptq"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dip"
+        android:background="@color/white"
+        android:layout_below="@+id/lin_content1"
+        ></View>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dip"
+        android:layout_centerHorizontal="true">
+        <CheckBox
+            android:id="@+id/cb_user_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/loginAgreementCheckboxTheme"
+            android:checked="true" />
+        <TextView
+            android:id="@+id/tv_user_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/cb_user_agreement"
+            android:textSize="@dimen/text_12sp" />
+    </RelativeLayout>
+</RelativeLayout>

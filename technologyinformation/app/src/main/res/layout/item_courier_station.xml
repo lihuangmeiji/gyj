@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_product_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_size_10">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/white_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_user_message_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="驿站名称"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:textSize="@dimen/text_16sp" />
+
+        <TextView
+            android:id="@+id/tv_user_message_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="浙江省杭州市滨江区江南大道"
+            android:textColor="@color/tabwd"
+            android:textSize="@dimen/text_16sp" />
+    </LinearLayout>
+</LinearLayout>

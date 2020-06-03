@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color2"
+    tools:context=".module.ui.users.UserAddressActivity">
+    <View
+        android:id="@+id/status_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_statue_height"
+        android:background="@color/white" />
+    <include layout="@layout/layout_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/lin_address"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="20dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:layout_height="60dip">
+        <TextView
+            android:id="@+id/tv_address_detail"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_16sp"
+            android:hint="@string/tv43"
+            android:textColorHint="@color/color4"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/right_go"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_16sp"
+        android:hint="@string/tv42"
+        android:textColorHint="@color/color4"/>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dip">
+
+    <com.system.technologyinformation.widget.CircleImageView
+        android:id="@+id/iv_groupinfo_ico"
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+        android:src="@mipmap/userphotomr" />
+
+    <TextView
+        android:id="@+id/tv_groupinfo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="测试订单商品名字测试订单商品名字测试订单商品名字"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_16sp" />
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/lin_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_background"
+        android:gravity="center"
+        android:visibility="visible"
+        android:orientation="vertical">
+      <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="@mipmap/shoppingmr"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv98"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="30dip"
+            android:textSize="@dimen/text_16sp"
+
+
+            android:layout_marginTop="20dip"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000积分 = 10块钱"
+            android:textColor="#F7893E"
+            android:layout_marginTop="20dip"
+            android:textSize="@dimen/text_22sp"/>
+        <TextView
+            android:id="@+id/tv_prompt_content"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/bg_shape_home_prompt"
+            android:layout_margin="20dip"
+            android:textSize="@dimen/text_16sp"
+            android:textColor="@color/white"
+            android:text="明日再战"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_home_prompt_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/red_envelope_close"
+        android:layout_marginTop="30dip"
+        />
+</LinearLayout>

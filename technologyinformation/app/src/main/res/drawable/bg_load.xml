@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item
+        android:drawable="@drawable/jiazai0000"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/jiazai0001"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/jiazai0002"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/jiazai0003"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/jiazai0004"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/jiazai0005"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/jiazai0006"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/jiazai0007"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/jiazai0008"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/jiazai0009"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/jiazai0010"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/jiazai0011"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/jiazai0012"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/jiazai0013"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/jiazai0014"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/jiazai0015"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/jiazai0016"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/jiazai0017"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/jiazai0018"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/jiazai0019"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/jiazai0020"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/jiazai0021"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/jiazai0022"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/jiazai0023"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/jiazai0024"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/jiazai0025"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/jiazai0026"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/jiazai0027"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/jiazai0028"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/jiazai0029"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/jiazai0030"
+        android:duration="100" />
+</animation-list>

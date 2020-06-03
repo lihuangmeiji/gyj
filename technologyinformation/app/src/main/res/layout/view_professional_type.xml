@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dip"
+        android:background="@color/white"
+        android:layout_height="45dip">
+
+        <TextView
+            android:id="@+id/btn_dialog_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center|left"
+            android:text="@string/tv26"
+            android:textColor="@color/color1"
+            android:textSize="@dimen/text_14sp" />
+
+
+        <TextView
+            android:id="@+id/btn_dialog_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center|right"
+            android:text="@string/tv27"
+            android:textColor="@color/color1"
+            android:textSize="@dimen/text_14sp" />
+    </LinearLayout>
+
+    <com.system.technologyinformation.widget.PickerView
+        android:id="@+id/pi_professional_type"
+        android:layout_width="match_parent"
+        android:layout_height="120dip"
+        android:visibility="gone"
+        android:background="@color/white">
+    </com.system.technologyinformation.widget.PickerView>
+    <com.contrarywind.view.WheelView
+        android:id="@+id/wheelview"
+        android:layout_width="match_parent"
+        android:layout_height="120dip"
+        android:background="@color/white"/>
+</LinearLayout>

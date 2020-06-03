@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".module.ui.home.AliyunPlayerSkinActivity">
+
+    <View
+        android:id="@+id/status_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_statue_height"
+        android:background="@color/black" />
+    <com.system.technologyinformation.widget.Linearlayout_16_9
+        android:id="@+id/lin_play_mr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:gravity="center"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color31"
+            android:textSize="@dimen/text_14sp"
+            android:text="该直播间尚未开播，请稍后重试"
+            />
+    </com.system.technologyinformation.widget.Linearlayout_16_9>
+    <com.system.technologyinformation.widget.AliyunVodPlayerView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dip">
+    </com.system.technologyinformation.widget.AliyunVodPlayerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/rel_live"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_live"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="40dip"
+                android:gravity="center|right"
+                android:text="@string/tv121"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16sp" />
+
+            <View
+                android:id="@+id/v_live"
+                android:layout_width="35dip"
+                android:layout_height="3dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dip"
+                android:background="@color/color6"></View>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_on_demand"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_on_demand"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dip"
+                android:gravity="center|left"
+                android:text="@string/tv122"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16sp" />
+
+            <View
+                android:id="@+id/v_on_demand"
+                android:layout_width="35dip"
+                android:layout_height="3dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:visibility="gone"
+                android:layout_marginLeft="40dip"
+                android:background="@color/color6"></View>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dip"
+        android:background="#D9D9D9"></View>
+    <LinearLayout
+        android:id="@+id/lin_live_plate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dip">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <com.system.technologyinformation.widget.CircleImageView
+                android:id="@+id/iv_on_ico"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:src="@mipmap/userphotomr" />
+            <TextView
+                android:id="@+id/iv_on_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dip"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16sp"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/iv_on_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_14sp"
+            android:layout_marginTop="5dip"
+            android:textColor="@color/color9"/>
+    </LinearLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <ViewStub
+        android:id="@+id/vs_showerror"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/layout_empty" />
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

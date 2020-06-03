@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_background_order"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="10dip"
+            android:layout_height="45dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/tv104"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_14sp" />
+            <ImageView
+                android:id="@+id/iv_order_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/order_time_close"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.contrarywind.view.WheelView
+                android:id="@+id/wheelview"
+                android:layout_width="0dip"
+                android:layout_weight="3"
+                android:layout_height="120dip"
+                />
+            <com.contrarywind.view.WheelView
+                android:id="@+id/wheelviewtype"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="120dip"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_pay"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="30dip"
+            android:layout_marginTop="50dip"
+            android:layout_marginBottom="20dip"
+            android:background="@drawable/bg_home_order_time"
+            android:gravity="center"
+            android:text="@string/tv27"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16sp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color39"
+    android:orientation="vertical"
+    tools:context=".module.ui.home.CreditsExchangeActivity">
+
+    <View
+        android:id="@+id/status_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_statue_height"
+        android:background="@color/color49" />
+
+    <include layout="@layout/layout_toolbar" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeLayout_ce"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="240dip"
+                    android:background="@color/color49">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="160dip"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/bg_shape_ce"></View>
+
+                    <com.youth.banner.Banner
+                        android:id="@+id/banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dip"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginRight="15dip"
+                        android:layout_marginTop="15dip"
+                        app:banner_default_image="@mipmap/shoppingmr"
+                        app:indicator_drawable_selected="@drawable/bg_shape_banner_selected"
+                        app:indicator_drawable_unselected="@drawable/bg_shape_banner_unselected" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="15dip"
+                        android:layout_marginLeft="15dip"
+                        android:text="@string/tv145"
+                        android:textColor="@color/tabwd"
+                        android:textSize="@dimen/text_16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="15dip"
+                        android:layout_marginRight="15dip"
+                        android:drawableLeft="@mipmap/integral_bs"
+                        android:drawablePadding="5dip"
+                        android:text="@string/tv31"
+                        android:textColor="@color/tabwd"
+                        android:textSize="@dimen/text_16sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:layout_marginTop="20dip"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="可兑换商品"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_16sp"
+                    android:textStyle="bold" />
+
+                <ViewStub
+                    android:id="@+id/vs_showerror"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout="@layout/layout_empty" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+                        android:background="@color/white"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="15dip" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/iv_illuminate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+         />
+
+    <ImageView
+        android:id="@+id/red_envelope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/shoppingmr" />
+
+    <TextView
+        android:id="@+id/tv_dialog_confirm"
+        android:layout_width="150dip"
+        android:layout_height="40dip"
+        android:layout_alignBottom="@+id/red_envelope"
+        android:background="@drawable/bg_sign1"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="@string/tv97"
+        android:layout_marginBottom="75dip"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_16sp" />
+    <TextView
+        android:id="@+id/tv_dialog_ts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/tv96"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_16sp"
+        android:layout_marginBottom="18dip"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/tv_dialog_confirm"
+        />
+
+    <TextView
+        android:id="@+id/tv_obtain_integral"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/red_envelope"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="80分"
+        android:visibility="gone"
+        android:layout_marginBottom="60dip"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+    <TextView
+        android:id="@+id/tv_obtain_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="哇！手气真好"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_16sp"
+        android:layout_marginBottom="18dip"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/tv_obtain_integral"
+        />
+    <ImageView
+        android:id="@+id/iv_red_envelope_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/red_envelope_close"
+        android:layout_below="@+id/iv_illuminate"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+</RelativeLayout>

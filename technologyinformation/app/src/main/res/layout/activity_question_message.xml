@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:focusableInTouchMode="true"
+    tools:context=".module.ui.chat.QuestionMessageActivity">
+    <View
+        android:id="@+id/status_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_statue_height"
+        android:background="@color/white" />
+    <include layout="@layout/layout_toolbar" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dip"
+        android:background="@color/color48"></View>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/tv_question_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="5"
+                android:textSize="@dimen/text_16sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/tabwd"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/gray_background"
+                android:hint="请输入问题内容..."
+                android:gravity="left"
+                android:padding="10dip"/>
+            <com.system.technologyinformation.widget.RoundImageView1
+                android:id="@+id/iv_question_img"
+                android:layout_width="110dip"
+                android:layout_height="110dip"
+                android:layout_marginTop="10dip"
+                android:layout_marginLeft="10dip"
+                android:src="@mipmap/question_img"
+                />
+            <TextView
+                android:id="@+id/tv_question"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/bg_home_order_time"
+                android:textColor="@color/white"
+                android:text="提交"
+                android:gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

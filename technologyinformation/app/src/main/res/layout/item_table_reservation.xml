@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.system.technologyinformation.widget.RoundImageView
+            android:id="@+id/iv_tr_ico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/shoppingmr" />
+        <TextView
+            android:id="@+id/tv_inventory"
+            android:layout_width="55dip"
+            android:layout_height="55dip"
+            android:textSize="@dimen/text_14sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:text="已售罄"
+            android:gravity="center"
+            android:background="@drawable/bg_shape_cicle_sign4"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_tr_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:textSize="@dimen/text_16sp" />
+
+    <TextView
+        android:id="@+id/tv_tr_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:textColor="@color/tabwd"
+        android:textSize="@dimen/text_12sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/tv_tr_discounted_prices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv69"
+            android:textColor="@color/color5"
+            android:textSize="@dimen/text_14sp" />
+        <TextView
+            android:id="@+id/tv_tr_original_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv103"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/color5"
+            android:textSize="@dimen/text_12sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="13dip"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:id="@+id/tv_tr_prices"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/tv69"
+            android:textColor="@color/color37"
+            android:textSize="@dimen/text_16sp" />
+        <ImageView
+            android:id="@+id/iv_shopping_reduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/sp_subtract"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/tv_tr_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:text="1"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            android:textSize="@dimen/text_16sp" />
+
+        <ImageView
+            android:id="@+id/iv_shopping_increase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:src="@mipmap/sp_add" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color39"
+    android:orientation="vertical"
+    tools:context=".module.ui.home.CreditsExchangeSuccessActivity">
+
+    <View
+        android:id="@+id/status_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_statue_height"
+        android:background="@color/color49" />
+
+    <include layout="@layout/layout_toolbar" />
+
+    <ViewStub
+        android:id="@+id/vs_showerror"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/layout_empty" />
+
+    <ScrollView
+        android:id="@+id/sv_confirm_order"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:scrollbars="none"
+        android:layout_marginTop="10dip"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="30dip"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/credits_exchange_success" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="兑换成功"
+                android:textColor="@color/color50"
+                android:textSize="@dimen/text_16sp" />
+
+            <LinearLayout
+                android:id="@+id/lin_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="15dip">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.system.technologyinformation.widget.RoundImageView1
+                        android:id="@+id/iv_sh_ico"
+                        android:layout_width="80dip"
+                        android:layout_height="80dip"
+                        android:src="@mipmap/shoppingmr" />
+
+                    <TextView
+                        android:id="@+id/tv_sh_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:layout_toRightOf="@+id/iv_sh_ico"
+                        android:lines="2"
+                        android:text="@string/tv118"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_sh_point"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_sh_name"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginTop="15dip"
+                        android:layout_toRightOf="@+id/iv_sh_ico"
+                        android:text="15积分"
+                        android:textColor="@color/color50"
+                        android:textSize="@dimen/text_18sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginTop="25dip"
+                    android:background="#BEBEBE" />
+
+                <LinearLayout
+                    android:id="@+id/lin_type1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/tabwd"
+                        android:textSize="@dimen/text_12sp"
+                        android:text="您也可以去我的-我的订单里去查看哦~"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/tabwd"
+                        android:textSize="@dimen/text_12sp"
+                        android:layout_marginTop="10dip"
+                        android:text="稍后工作人员会和您联系！"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_12sp"
+                        android:textColor="@color/color37"
+                        android:layout_marginTop="15dip"
+                        android:text="立即查看>"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_type3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dip"
+                        android:layout_marginRight="50dip"
+                        android:gravity="center"
+                        android:text="请将二维码出示给驿站工作人员,30天内有效！"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_16sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_save_qr_code"
+                        android:layout_width="160dip"
+                        android:layout_height="160dip"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dip"
+                        android:src="@mipmap/shoppingmr" />
+
+                    <TextView
+                        android:id="@+id/tv_save_qr_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dip"
+                        android:background="@drawable/bg_shape_save_qr_code"
+                        android:paddingBottom="7dip"
+                        android:paddingLeft="14dip"
+                        android:paddingRight="14dip"
+                        android:paddingTop="7dip"
+                        android:text="立即保存到相册"
+                        android:textColor="@color/color60"
+                        android:textSize="@dimen/text_14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15dip"
+                        android:layout_marginTop="15dip"
+                        android:text="您也可以去我的-我的订单里去查看哦~"
+                        android:textColor="@color/tabwd"
+                        android:textSize="@dimen/text_10sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

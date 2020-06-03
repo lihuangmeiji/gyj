@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dip"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="8dip"
+        android:background="@drawable/bg_online_supermarket_title"
+        android:layout_alignLeft="@+id/tv_os_title"
+        android:layout_alignRight="@+id/tv_os_title"
+        android:layout_alignBottom="@+id/tv_os_title"></View>
+    <TextView
+        android:id="@+id/tv_os_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:text="正品香烟"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_16sp" />
+</RelativeLayout>

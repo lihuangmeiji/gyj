@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_shape_user_order"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".module.fragment.TabCategorizeSecondFragment">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:text="@string/tv38"
+        android:textSize="@dimen/text_16sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_task"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"/>
+</LinearLayout>

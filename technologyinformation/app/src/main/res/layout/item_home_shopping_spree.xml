@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="10dip">
+
+    <com.system.technologyinformation.widget.ImageView_1_1
+        android:id="@+id/iv_ss_ico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@mipmap/shoppingmr" />
+
+    <TextView
+        android:layout_marginTop="15dip"
+        android:id="@+id/tv_ss_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textSize="@dimen/text_14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv136"
+            android:textColor="@color/tabwd"
+            android:layout_marginRight="3dip"
+            android:textSize="@dimen/text_12sp" />
+
+        <TextView
+            android:id="@+id/tv_ss_discounted_prices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:gravity="right"
+            android:textColor="@color/color37"
+            android:textSize="@dimen/text_12sp" />
+    </LinearLayout>
+</LinearLayout>

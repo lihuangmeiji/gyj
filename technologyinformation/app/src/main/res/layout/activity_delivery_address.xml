@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color59"
+    tools:context=".module.ui.users.DeliveryAddressActivity">
+
+    <View
+        android:id="@+id/status_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_statue_height"
+        android:background="@color/white" />
+
+    <include layout="@layout/layout_toolbar" />
+
+    <ViewStub
+        android:id="@+id/vs_showerror"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/layout_empty" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_marginTop="10dip">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/white_background">
+
+            <EditText
+                android:id="@+id/et_user_da_name"
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:textSize="@dimen/text_16sp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="15dip"
+                android:lines="1"
+                android:hint="请输入姓名"
+                android:textColorHint="@color/textProfileGray"
+                android:textColor="@color/black"
+                android:background="@null"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dip"
+                android:layout_marginLeft="15dip"
+                android:background="@color/color40"></View>
+            <EditText
+                android:id="@+id/et_user_da_phone"
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:textSize="@dimen/text_16sp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:inputType="phone"
+                android:lines="1"
+                android:maxLength="11"
+                android:hint="请输入手机号"
+                android:textColorHint="@color/textProfileGray"
+                android:textColor="@color/black"
+                android:background="@null"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dip"
+                android:layout_marginLeft="15dip"
+                android:background="@color/color40"></View>
+            <TextView
+                android:id="@+id/tv_user_da_add"
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:textSize="@dimen/text_16sp"
+                android:layout_marginLeft="15dip"
+                android:hint="请选择省市信息"
+                android:gravity="center_vertical"
+                android:textColorHint="@color/textProfileGray"
+                android:textColor="@color/black"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dip"
+                android:layout_marginLeft="15dip"
+                android:background="@color/color40"></View>
+            <EditText
+                android:id="@+id/et_user_da_add_det"
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:textSize="@dimen/text_16sp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="15dip"
+                android:lines="1"
+                android:hint="请输入详细地址"
+                android:textColorHint="@color/textProfileGray"
+                android:textColor="@color/black"
+                android:background="@null"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

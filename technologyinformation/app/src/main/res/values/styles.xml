@@ -1,0 +1,309 @@
+<resources>
+
+
+    <style name="ToolbarTheme" parent="Theme.AppCompat.Light">
+        <!-- 设置 toolbar 溢出菜单的文字的颜色 -->
+        <item name="android:textColor">@color/black</item>
+        <!-- 设置toolbar 溢出菜单的字体大小-->
+        <item name="android:textSize">16sp</item>
+        <!-- 设置 显示在toobar上菜单文字的颜色 -->
+        <item name="actionMenuTextColor">@color/black</item>
+    </style>
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color37</item>
+        <item name="colorPrimaryDark">@color/color37</item>
+        <item name="colorAccent">@color/color37</item>
+    </style>
+
+    <!-- Style for custom dialog theme -->
+    <style name="dialog_custom_roll_up_down" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+        <item name="android:windowAnimationStyle">@style/roll_up_down_anim_style</item>
+    </style>
+
+    <!-- Style for dialog loading theme -->
+    <style name="customDialog_loading" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <!-- 闪屏背景，可用图片 -->
+        <item name="android:windowBackground">@drawable/bg_app</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AppOverlayTheme" parent="AppTheme">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="roll_up_down_anim_style" parent="android:Animation.Translucent">
+        <!-- 进入时的动画 -->
+        <item name="@android:windowEnterAnimation">@anim/roll_up</item>
+        <!-- 退出时的动画 -->
+        <item name="@android:windowExitAnimation">@anim/roll_down</item>
+    </style>
+
+    <style name="Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/notAnimation</item>
+    </style>
+
+    <style name="notAnimation">
+         
+        <item name="android:activityOpenEnterAnimation">@null</item>
+         
+        <item name="android:activityOpenExitAnimation">@null</item>
+         
+        <item name="android:activityCloseEnterAnimation">@null</item>
+         
+        <item name="android:activityCloseExitAnimation">@null</item>
+         
+        <item name="android:taskOpenEnterAnimation">@null</item>
+         
+        <item name="android:taskOpenExitAnimation">@null</item>
+         
+        <item name="android:taskCloseEnterAnimation">@null</item>
+         
+        <item name="android:taskCloseExitAnimation">@null</item>
+         
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+         
+        <item name="android:taskToFrontExitAnimation">@null</item>
+         
+        <item name="android:taskToBackEnterAnimation">@null</item>
+         
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="alivc_info_seekbar" parent="@android:style/Widget.SeekBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:maxHeight">3dp</item>
+        <item name="android:minHeight">3dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:thumbOffset">8dp</item>
+    </style>
+
+    <style name="addDownloadDialog" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <!-- 为了避免在有 NavigationBar 的手机上 Dialog 从 NavigationBar 底部上来。去掉 Dialog 的动画，使用 View 的动画。-->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="chat_text_date_style">
+        <item name="android:padding">2dp</item>
+        <item name="android:paddingTop">2dip</item>
+        <item name="android:paddingBottom">2dip</item>
+        <item name="android:paddingLeft">12dip</item>
+        <item name="android:paddingRight">12dip</item>
+        <item name="android:textColor">@color/color14</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="chat_text_name_style">
+        <item name="android:textColor">#818181</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="chat_content_date_style">
+        <item name="android:minHeight">50dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:background">#bfbfbf</item>
+    </style>
+
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <style name="horizontal_slide" parent="android:Theme.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/AnimFade2</item>
+    </style>
+
+    <style name="AnimFade2" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_from_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_to_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_to_right</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_from_left</item>
+    </style>
+
+    <declare-styleable name="PageMenuLayout">
+        <attr name="pagemenu_row_count" format="integer" />
+        <attr name="pagemenu_span_count" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="IndicatorView">
+        <attr name="indicatorColor" format="color" />
+        <attr name="indicatorColorSelected" format="color" />
+        <attr name="indicatorWidth" format="integer" />
+        <attr name="gravity" format="integer" />
+    </declare-styleable>
+
+    <style name="tv_integral_rules1">
+        <item name="android:textSize">@dimen/text_10sp</item>
+        <item name="android:textColor">@color/tabwd</item>
+    </style>
+
+    <style name="tv_integral_rules2">
+        <item name="android:textSize">@dimen/text_10sp</item>
+        <item name="android:textColor">@color/color37</item>
+    </style>
+
+    <style name="tv_pay_money1">
+        <item name="android:textSize">@dimen/text_16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="tv_pay_money2">
+        <item name="android:textSize">@dimen/text_16sp</item>
+        <item name="android:textColor">@color/color37</item>
+    </style>
+
+    <style name="tv_pb_discounted_prices1">
+        <item name="android:textSize">@dimen/text_12sp</item>
+        <item name="android:textColor">@color/color37</item>
+    </style>
+
+    <style name="tv_pb_discounted_prices2">
+        <item name="android:textSize">@dimen/text_18sp</item>
+        <item name="android:textColor">@color/color37</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="tvShPoint1">
+        <item name="android:textSize">@dimen/text_14sp</item>
+        <item name="android:textColor">@color/color50</item>
+    </style>
+
+    <style name="tvShPoint2">
+        <item name="android:textSize">@dimen/text_18sp</item>
+        <item name="android:textColor">@color/color50</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="feeExemptions1">
+        <item name="android:textSize">@dimen/text_13sp</item>
+        <item name="android:textColor">@color/color61</item>
+    </style>
+
+    <style name="feeExemptions2">
+        <item name="android:textSize">@dimen/text_18sp</item>
+        <item name="android:textColor">@color/color61</item>
+    </style>
+
+    <style name="integralRules1">
+        <item name="android:textSize">@dimen/text_14sp</item>
+        <item name="android:textColor">@color/color37</item>
+    </style>
+
+    <style name="integralRules2">
+        <item name="android:textSize">@dimen/text_14sp</item>
+        <item name="android:textColor">@color/tabwd</item>
+    </style>
+
+
+    <style name="tvUserAgreement2">
+        <item name="android:textSize">@dimen/text_12sp</item>
+        <item name="android:textColor">@color/color37</item>
+    </style>
+
+    <style name="tvUserAgreement1">
+        <item name="android:textSize">@dimen/text_12sp</item>
+        <item name="android:textColor">@color/tabwd</item>
+    </style>
+
+    <style name="tv_kf1">
+        <item name="android:textSize">@dimen/text_12sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="tv_kf2">
+        <item name="android:textSize">@dimen/text_12sp</item>
+        <item name="android:textColor">@color/color37</item>
+    </style>
+
+    <style name="tv_ce_point1">
+        <item name="android:textSize">@dimen/text_12sp</item>
+        <item name="android:textColor">@color/color37</item>
+    </style>
+
+    <style name="tv_ce_point2">
+        <item name="android:textSize">@dimen/text_18sp</item>
+        <item name="android:textColor">@color/color37</item>
+    </style>
+
+    <!-- 自定义验证码输入框-->
+    <declare-styleable name="vericationCodeView">
+        <!--输入框的数量-->
+        <attr name="vcv_et_number" format="integer" />
+        <!--输入类型-->
+        <attr name="vcv_et_inputType">
+            <enum name="number" value="0" />
+            <enum name="numberPassword" value="1" />
+            <enum name="text" value="2" />
+            <enum name="textPassword" value="3" />
+        </attr>
+        <!--输入框的宽度-->
+        <attr name="vcv_et_width" format="dimension|reference" />
+        <!--输入框文字颜色-->
+        <attr name="vcv_et_text_color" format="color|reference" />
+        <!--输入框文字大小-->
+        <attr name="vcv_et_text_size" format="dimension|reference" />
+        <!--输入框背景-->
+        <attr name="vcv_et_bg" format="reference" />
+        <!--光标样式-->
+        <attr name="vcv_et_cursor" format="reference" />
+        <!--是否隐藏光标-->
+        <attr name="vcv_et_cursor_visible" format="boolean" />
+        <!--输入框间距，不输入则代表平分-->
+        <attr name="vcv_et_spacing" format="dimension|reference" />
+    </declare-styleable>
+
+    <style name="loginAgreementCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/login_agreement_select_selector</item>
+        <item name="android:paddingLeft">5dip</item>
+    </style>
+</resources>
